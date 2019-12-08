@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e1e1e1"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/roomImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_room_image" />
+
+    <TextView
+        android:id="@+id/roomDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/roomImageView"
+        android:text="ROOM DESRIPTION"
+        android:textSize="12dp"
+
+        />
+
+    <TextView
+        android:id="@+id/roomTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomDescriptionTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/roomImageView"
+        android:text="Room type"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/roomRentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomTypeTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/roomImageView"
+        android:text="Room Rent"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/roomRatingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomRentTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/roomImageView"
+        android:text="Room Ratings"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/roomMenuBarButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/roomDescriptionTextView"
+        android:layout_margin="10dp"
+        android:src="@drawable/optionsicon" />
+
+    <TextView
+        android:id="@+id/roomIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/roomMenuBarButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="16dp"
+        android:text="ID"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

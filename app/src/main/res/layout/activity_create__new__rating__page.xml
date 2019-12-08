@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".Create_New_Rating_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/new_Rating_RatingBar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/newRatingSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_Rating_RatingBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Done" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

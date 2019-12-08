@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_New_Room">
+
+
+    <ImageView
+        android:id="@+id/newroomImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_room_image" />
+
+    <EditText
+        android:id="@+id/newroomDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newroomImageButton"
+        android:hint="Description"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/newroomlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newroomDescriptionEditText"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/newroomtype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newroomDescriptionEditText"
+            android:layout_weight="2"
+            android:entries="@array/roomType"
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newroomnumbeofbedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newroomlayout"
+        android:layout_marginTop="5dp"
+        android:hint="Number Of Bed"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/newroomrentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newroomnumbeofbedEditText"
+        android:layout_marginTop="5dp"
+        android:hint="Rent"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/newroomsaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newroomrentEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="save"
+        />
+
+</RelativeLayout>

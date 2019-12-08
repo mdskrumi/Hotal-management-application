@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPageActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/loginpageimage" />
+
+    <TextView
+        android:id="@+id/signupTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a New Customer Account"
+        android:layout_marginRight="5dp"
+        android:onClick="createAccountClicked"
+
+        />
+
+    <EditText
+        android:id="@+id/usernameloginET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupTV"
+        android:hint="User Name"
+        />
+
+
+    <EditText
+        android:id="@+id/userpassloginET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameloginET"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/usertypeTV"
+        android:text="Type"
+        android:layout_below="@+id/userpassloginET"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Spinner
+        android:id="@+id/usertypeSPR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userpassloginET"
+        android:layout_toRightOf="@+id/usertypeTV"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/userType"
+        >
+
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/usertypeTV"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN"
+        android:onClick="loginClicked"
+        />
+
+
+    <Button
+        android:id="@+id/viewasguestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view as a guest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:onClick="seeCustomers"
+
+        />
+
+
+</RelativeLayout>

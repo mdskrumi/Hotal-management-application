@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iManageHotel</string>
+
+    <string-array name="userType">
+        <item>Admin</item>
+        <item>Employee</item>
+        <item>Customer</item>
+    </string-array>
+
+    <string-array name="roomType">
+        <item>Single Room</item>
+        <item>Double Room</item>
+    </string-array>
+
+    <string name="blankET">This Field is Required</string>
+
+</resources>

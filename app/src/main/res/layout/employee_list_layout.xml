@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/employeeprofilepicIV"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#dedbdb"
+        android:src="@drawable/defaultprofilepic"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        />
+    <TextView
+        android:id="@+id/employeefullnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FULL NAME"
+        android:layout_toRightOf="@+id/employeeprofilepicIV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/employeepositionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@id/employeeOptionsButton"
+
+        />
+
+    <TextView
+        android:id="@+id/employeeemailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_toRightOf="@+id/employeeprofilepicIV"
+        android:layout_below="@+id/employeefullnameTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/employeesalaryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/employeefullnameTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@id/employeeOptionsButton"
+        />
+
+
+    <TextView
+        android:id="@+id/employeephnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_toRightOf="@+id/employeeprofilepicIV"
+        android:layout_below="@+id/employeeemailTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/employeeageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/employeeemailTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@id/employeeOptionsButton"
+        />
+
+    <ImageView
+        android:id="@+id/employeeOptionsButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/employeefullnameTV"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/optionsicon" />
+
+
+</RelativeLayout>

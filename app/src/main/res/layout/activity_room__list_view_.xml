@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room_ListView_Activity">
+
+    <LinearLayout
+        android:id="@+id/roomfilterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dadada"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/roomTypefilterSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/doneRoomFilteringButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DONE" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/roomListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/filterLayout"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/doneroomlistbg" />
+
+    <ImageView
+        android:id="@+id/addRoomButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/addbutton" />
+
+    <TextView
+        android:id="@+id/roomHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Room List\n     is Empty"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

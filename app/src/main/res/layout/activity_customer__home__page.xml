@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_Home_Page">
+
+
+    <ImageView
+        android:id="@+id/loggedbackgroudImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/cushomepage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/custormerPageMyProfileButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        android:layout_above="@+id/custormerPageviewroomButton"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="My \nProfile"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/custormerPageviewroomButton"
+
+        android:text="Rooms"
+        android:textSize="13dp"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_marginLeft="35dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+
+        android:background="@drawable/imagehomebutton"
+        android:onClick="anybuttonClicked"
+        />
+
+    <Button
+        android:id="@+id/custormerPageViewnoticebutton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_marginRight="35dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:text="View\nnotice"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp"
+        android:onClick="anybuttonClicked"/>
+
+
+
+    <Button
+        android:id="@+id/custormerPageviewcommentButton"
+
+        android:text="My\nComments"
+        android:textSize="13dp"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+
+        android:layout_below="@id/custormerPageviewroomButton"
+        android:background="@drawable/imagehomebutton"
+        android:onClick="anybuttonClicked"
+        />
+
+    <Button
+        android:id="@+id/custormerPageHotelInformationButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_below="@+id/custormerPageViewnoticebutton"
+
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:text="Hotel Information"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp"
+        android:onClick="anybuttonClicked"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+
+    <ImageView
+        android:id="@+id/customerprofilepicIV"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#dedbdb"
+        android:src="@drawable/defaultprofilepic"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/cusfullnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FULL NAME"
+        android:layout_toRightOf="@+id/customerprofilepicIV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/cusemailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_toRightOf="@+id/customerprofilepicIV"
+        android:layout_below="@+id/cusfullnameTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/cusphnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_toRightOf="@+id/customerprofilepicIV"
+        android:layout_below="@+id/cusemailTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/cusidtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

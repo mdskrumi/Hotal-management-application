@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee_Home_Page">
+
+    <ImageView
+        android:id="@+id/loggedbackgroudImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/cushomepage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/employeePageMyProfileButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_above="@+id/employeePageviewroomButton"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="My \nProfile"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp"
+
+        />
+
+    <Button
+        android:id="@+id/employeePageviewcustomerButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_above="@+id/employeePageviewroomButton"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="35dp"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="customers"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/employeePageviewroomButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+
+        android:text="Rooms"
+        android:textColor="@android:color/background_light"
+
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/employeePageViewnoticebutton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="View\nnotice"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp" />
+
+
+    <Button
+        android:id="@+id/employeePageviewcommentButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/employeePageviewroomButton"
+        android:layout_marginLeft="35dp"
+
+        android:layout_marginTop="40dp"
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="Comments"
+
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/employeePageHotelInfoButton"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@+id/employeePageViewnoticebutton"
+        android:layout_marginRight="35dp"
+
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/imagehomebutton"
+
+        android:onClick="anybuttonClicked"
+        android:text="Hotel\nInformation"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="13dp" />
+
+
+</RelativeLayout>

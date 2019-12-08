@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Hotel_Page"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/hotelNameEditTExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotel Name"
+        />
+    <EditText
+        android:id="@+id/hotelLocationEditTExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotel Location"
+        />
+    <EditText
+        android:id="@+id/hotelemailEditTExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        />
+    <EditText
+        android:id="@+id/hotelNumberEditTExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        />
+    <Button
+        android:id="@+id/donehotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

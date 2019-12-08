@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Employee_Account">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/newEmployeeFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            />
+
+        <EditText
+            android:id="@+id/newEmployeeUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            />
+
+        <EditText
+            android:id="@+id/newEmployeePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/newEmployeeConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/newEmployeeDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            />
+
+        <EditText
+            android:id="@+id/newEmployeeSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salary"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/newEmployeeAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/newEmployeePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/newEmployeeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            />
+        <Button
+            android:id="@+id/newEmployeeCreateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

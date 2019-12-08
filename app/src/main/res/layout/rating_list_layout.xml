@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#271835"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/ratingLayoutRatingID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ratingLayoutroomID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingLayoutRatingID"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+
+        android:text="id" />
+
+    <TextView
+        android:id="@+id/ratingLayoutcusID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingLayoutroomID"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:text="id" />
+
+    <TextView
+        android:id="@+id/ratingLayoutRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingLayoutcusID"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:text="id" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ratingfinal" />
+
+</RelativeLayout>

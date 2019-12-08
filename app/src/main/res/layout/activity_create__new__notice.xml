@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_New_Notice">
+
+
+    <EditText
+        android:id="@+id/newNoticeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write The Notice Here"
+        />
+
+    <EditText
+        android:id="@+id/newNoticeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newNoticeEditText"
+        android:inputType="date"
+        android:hint="Date"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/newNoticeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/newNoticeDate"
+        android:layout_marginTop="20dp"
+        >
+        <RadioButton
+            android:id="@+id/newNoticePrivacyPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+
+            />
+
+        <RadioButton
+            android:id="@+id/newNoticePrivacyPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/newNoticeSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/newNoticeRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>

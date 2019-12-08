@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity"
+    android:orientation="vertical"
+    >
+
+
+    <EditText
+        android:id="@+id/newCusfullnameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        />
+
+
+
+    <EditText
+        android:id="@+id/newCusnameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        />
+
+    <EditText
+        android:id="@+id/newCuspassET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+
+    <EditText
+        android:id="@+id/newCusconfirmpasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/newCusphonenumberET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/newCusemailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/newCusregisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create account"
+        android:layout_gravity="center"
+        android:onClick="createAccountClicked"
+        />
+
+
+
+
+</LinearLayout>

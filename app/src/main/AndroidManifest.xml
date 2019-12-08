@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rumi.imanagehotel">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".CustomerListViewActivity" />
+        <activity android:name=".AdminHomePageActivity" />
+        <activity android:name=".CustomerClickedActivity" />
+        <activity android:name=".EmployeeListViewActivity" />
+        <activity android:name=".Create_Employee_Account" />
+        <activity android:name=".Room_ListView_Activity" />
+        <activity android:name=".Create_New_Room" />
+        <activity android:name=".Notice_ListView_Activity" />
+        <activity android:name=".Create_New_Notice" />
+        <activity android:name=".NoticeViewActivity" />
+        <activity android:name=".Employee_Home_Page" />
+        <activity android:name=".Employee_Profile_Page" />
+        <activity android:name=".Room_View_Page" />
+        <activity android:name=".Create_New_Comment_Page" />
+        <activity android:name=".Customer_Home_Page" />
+        <activity android:name=".Customer_Profile_Page" />
+        <activity android:name=".Comment_List_VIew_Page" />
+        <activity android:name=".Create_New_Rating_Page" />
+        <activity android:name=".Rating_ListView_Page" />
+        <activity android:name=".Hotel_Info_Page" />
+        <activity android:name=".Create_Hotel_Page"></activity>
+    </application>
+
+</manifest>
